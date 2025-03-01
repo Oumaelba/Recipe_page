@@ -1,0 +1,129 @@
+/*Recipe Project*/
+@font-face {
+	font-family: 'outfit';
+	src: url(./assets/static/Outfit-Medium.ttf);
+}
+@font-face {
+	font-family: 'Young Serif';
+	src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+	font-weight: 400;
+}
+*{
+	/* padding: 0; */
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--White: hsl(0, 0%, 100%);
+	--Stone-light: hsl(30, 54%, 90%);
+	--light-white: hsl(30, 18%, 87%);
+	--light-brown: hsl(30, 10%, 34%);
+	--Stone: hsl(24, 5%, 18%);
+	--Brown: hsl(14, 45%, 36%);
+	--Rose: hsl(332, 51%, 32%);
+	--Rose-white: hsl(330, 100%, 98%);
+}
+body{
+	background-color: var(--Stone-light);
+	color: var(--light-brown);
+	min-height: 100vh; 
+	font-family: 'outfit', sans-serif;
+	line-height: 1.4;
+	display: grid;
+	place-content: center;
+}
+.container {
+	max-width: 800px;
+	background-color: var(--White);
+	margin: 2rem;
+	border-radius: 1rem;
+	padding: 2rem;
+}
+img{
+	width: 100%;
+	display: block;
+	height: auto;
+	overflow: hidden;
+}
+h1{
+	color: var(--Stone);
+	font-family: 'Young Serif', serif;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.container p{
+	padding-bottom: 1.5rem;
+}
+.prepBox{
+	background-color: var(--Rose-white);
+	padding: 1.25rem;
+	border-radius: 1rem;
+}
+.prepBox h3{
+	color: var(--Rose);
+}
+.prepBox span{
+	font-weight: bold;
+}
+.prepBox ul li{
+	padding-top: 1rem;
+}
+.prepBox ul li::marker{
+	color: var(--Rose);
+}
+h2{
+	padding-top: 1rem;
+	color: var(--Brown);
+	font-family: 'Young Serif', serif;
+}
+ul li::marker{
+	color: var(--Brown);
+}
+ul li{
+	padding-top: 1rem;
+}
+hr{
+	margin-top: 2rem;
+	border: none;
+	height: 1px;
+	background-color: var(--light-white);
+}
+ol span{
+	font-weight: bold;
+}
+ol li{
+	padding-top: 0.75rem;
+}
+ol li::marker{
+	color: var(--Brown);
+	font-weight: bold;
+}
+.para{
+	padding-top: 1rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    text-align: left; 
+}
+table td:nth-child(2) {
+    color: var(--Brown);
+    font-weight: bold;
+}
+table tr:not(:last-child) {
+    border-bottom: 1px solid var(--light-white); 
+}
+
+@media (max-width: 768px) {
+	.container {
+	  padding: 1rem;
+	}
+	img {
+	  width: 100%;
+	}
+  }
+  
